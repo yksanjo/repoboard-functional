@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 400px;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 0 0 16px 0;
+    }
+    .board-item {
+      padding: 12px;
+      border: 1px solid #e1e4e8;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+    .board-item:hover {
+      background: #f6f8fa;
+    }
+    .board-name {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .board-desc {
+      font-size: 12px;
+      color: #586069;
+    }
+    .loading {
+      text-align: center;
+      padding: 20px;
+      color: #586069;
+    }
+    .error {
+      color: #cb2431;
+      padding: 12px;
+      background: #ffeef0;
+      border-radius: 6px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #e1e4e8;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔍 RepoBoard</h1>
+  
+  <input type="text" id="apiUrl" placeholder="API URL (e.g., http://localhost:8000)" />
+  <button id="saveUrl">Save</button>
+  
+  <div id="boards"></div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
+
